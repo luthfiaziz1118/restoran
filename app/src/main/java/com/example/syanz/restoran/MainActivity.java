@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -38,10 +41,37 @@ public class MainActivity extends AppCompatActivity {
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("http://maps.google.com/maps?sddr=-6.917314&daddr=107.721009"));
+                Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("http://maps.google.com/maps?daddr=-6.917314,107.721009"));
                 startActivity(intent);
             }
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.listmenu:
+                Intent intent=new Intent(MainActivity.this,menu.class);
+                startActivity(intent);
+                return true;
+            case R.id.phone:
+                Intent i = new Intent(Intent.ACTION_DIAL);
+                i.setData(Uri.parse("tel:+6281221513741"));
+                startActivity(i);
+                return true;
+            case R.id.map:
+                Intent ii =new Intent(Intent.ACTION_VIEW,Uri.parse("http://maps.google.com/maps?daddr=-6.917314,107.721009"));
+                startActivity(ii);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.renderscript.Sampler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,6 +45,21 @@ public class menu extends AppCompatActivity {
         menu10.setText("0");
         menu11.setText("0");
         menu12.setText("0");
+
+        registerForContextMenu(menu1);
+        registerForContextMenu(menu2);
+        registerForContextMenu(menu3);
+        registerForContextMenu(menu4);
+        registerForContextMenu(menu5);
+        registerForContextMenu(menu6);
+        registerForContextMenu(menu7);
+        registerForContextMenu(menu8);
+        registerForContextMenu(menu9);
+        registerForContextMenu(menu10);
+        registerForContextMenu(menu11);
+        registerForContextMenu(menu12);
+
+
 
 
         btn_cancel=(Button)findViewById(R.id.btn_cancel);
@@ -132,7 +149,47 @@ public class menu extends AppCompatActivity {
 
             }
         });
+    }
 
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        menu.add(0, v.getId(), 0, "1");
+        menu.add(0, v.getId(), 0, "2");
+        menu.add(0, v.getId(), 0, "3");
+        menu.add(0, v.getId(), 0, "4");
+        menu.add(0, v.getId(), 0, "5");
+    }
 
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        int angkaContexMenu = Integer.valueOf(item.getTitle().toString());
+        if (item.getItemId() == R.id.menu1) {
+            menu1.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu2)) {
+            menu2.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu3)) {
+            menu3.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu4)) {
+            menu4.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu5)) {
+            menu5.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu6)) {
+            menu6.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu7)) {
+            menu7.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu8)) {
+            menu8.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu9)) {
+            menu9.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu10)) {
+            menu10.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu11)) {
+            menu11.setText(item.getTitle().toString());
+        } else if ((item.getItemId() == R.id.menu12)) {
+            menu12.setText(item.getTitle().toString());
+        }
+
+        return true;
     }
 }
