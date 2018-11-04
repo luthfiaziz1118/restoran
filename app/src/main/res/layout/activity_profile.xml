@@ -4,38 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailMenuActivity"
+    tools:context=".ProfileActivity"
     android:orientation="vertical"
     android:padding="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_fotomenu"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:padding="5dp"/>
+        android:src="@drawable/owner"
+        />
     <TextView
-        android:id="@+id/tv_namamenu"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nama_menu"
         android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:text="MUHAMMAD LUTHFI AZIZ"/>
     <TextView
-        android:id="@+id/tv_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Harga : RP.10.000"
         android:layout_gravity="center"
-        android:textColor="@color/red"/>
+        android:text="1157050107"/>
     <TextView
-        android:id="@+id/tv_deskripsi"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="Keterangan"/>
+        android:text="@string/bio"/>
 
 </LinearLayout>

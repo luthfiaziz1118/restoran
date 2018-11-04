@@ -50,7 +50,7 @@ public class details extends AppCompatActivity {
         selesai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(details.this, "Terimakasih Sudah Berkunjung", Toast.LENGTH_LONG).show();
+                Toast.makeText(details.this, R.string.visit, Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(details.this,MainActivity.class);
                 startActivity(intent);

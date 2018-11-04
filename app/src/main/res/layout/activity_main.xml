@@ -17,13 +17,13 @@
                 android:id="@+id/nama_restoran"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RESTORAN TRADISIONAL"
+                android:text="@string/resto"
                 android:textAlignment="center"
                 android:textSize="40dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/gambar_restoran"
             android:layout_width="200dp"
             android:layout_height="200dp"

@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Makanan"
+            android:text="@string/menu_makanan"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:layout_weight="1"
-                        android:text="Nama Makanan"
+                        android:text="@string/nama_makanan"
                         android:textSize="14dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Harga"
+                        android:text="@string/harga"
                         android:textSize="14dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Jumlah Qty"
+                        android:text="@string/jumlah_qty"
                         android:textSize="14dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -110,7 +110,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
                             android:layout_weight="1"
-                            android:text="Chicken Katsu"
+                            android:text="@string/chicken_katsu"
                             android:textSize="14dp" />
                     </LinearLayout>
 
@@ -175,7 +175,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left"
                                 android:layout_weight="1"
-                                android:text="Kentang Goreng"
+                                android:text="@string/fry_potato"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -240,7 +240,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="left"
                                     android:layout_weight="1"
-                                    android:text="Sempolan"
+                                    android:text="@string/sempolan"
                                     android:textSize="14dp" />
                             </LinearLayout>
 
@@ -305,7 +305,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="left"
                                         android:layout_weight="1"
-                                        android:text="Nasi Goreng"
+                                        android:text="@string/nasi_goreng"
                                         android:textSize="14dp" />
                                 </LinearLayout>
 
@@ -370,7 +370,7 @@
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="left"
                                             android:layout_weight="1"
-                                            android:text="Udang Tempura"
+                                            android:text="@string/udang_tempura"
                                             android:textSize="14dp" />
                                     </LinearLayout>
 
@@ -435,7 +435,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
                                                 android:layout_weight="1"
-                                                android:text="Barbeque"
+                                                android:text="@string/barbeque"
                                                 android:textSize="14dp" />
                                         </LinearLayout>
 
@@ -481,7 +481,7 @@
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Menu Minuman"
+                                        android:text="@string/menu_minuman"
                                         android:textSize="20dp" />
 
                                     <LinearLayout
@@ -507,7 +507,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="left"
                                                     android:layout_weight="1"
-                                                    android:text="Nama Minuman"
+                                                    android:text="@string/nama_minuman"
                                                     android:textSize="14dp"
                                                     android:textStyle="bold" />
                                             </LinearLayout>
@@ -523,7 +523,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:gravity="center"
-                                                    android:text="Harga"
+                                                    android:text="@string/harga"
                                                     android:textSize="14dp"
                                                     android:textStyle="bold" />
                                             </LinearLayout>
@@ -539,7 +539,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:gravity="center"
-                                                    android:text="Jumlah Qty"
+                                                    android:text="@string/jumlah_qty"
                                                     android:textSize="14dp"
                                                     android:textStyle="bold" />
                                             </LinearLayout>
@@ -574,7 +574,7 @@
                                                         android:layout_height="wrap_content"
                                                         android:layout_gravity="left"
                                                         android:layout_weight="1"
-                                                        android:text="Jus Alpukat"
+                                                        android:text="@string/jus_alpukat"
                                                         android:textSize="14dp" />
                                                 </LinearLayout>
 
@@ -639,7 +639,7 @@
                                                             android:layout_height="wrap_content"
                                                             android:layout_gravity="left"
                                                             android:layout_weight="1"
-                                                            android:text="Jus Jeruk"
+                                                            android:text="@string/jus_jeruk"
                                                             android:textSize="14dp" />
                                                     </LinearLayout>
 
@@ -704,7 +704,7 @@
                                                                 android:layout_height="wrap_content"
                                                                 android:layout_gravity="left"
                                                                 android:layout_weight="1"
-                                                                android:text="Lemon Tea"
+                                                                android:text="@string/lemon_tea"
                                                                 android:textSize="14dp" />
                                                         </LinearLayout>
 
@@ -769,7 +769,7 @@
                                                                     android:layout_height="wrap_content"
                                                                     android:layout_gravity="left"
                                                                     android:layout_weight="1"
-                                                                    android:text="Ocean Blue"
+                                                                    android:text="@string/ocean_blue"
                                                                     android:textSize="14dp" />
                                                             </LinearLayout>
 
@@ -834,7 +834,7 @@
                                                                         android:layout_height="wrap_content"
                                                                         android:layout_gravity="left"
                                                                         android:layout_weight="1"
-                                                                        android:text="Bandrek"
+                                                                        android:text="@string/bandrek"
                                                                         android:textSize="14dp" />
                                                                 </LinearLayout>
 
@@ -899,7 +899,7 @@
                                                                             android:layout_height="wrap_content"
                                                                             android:layout_gravity="left"
                                                                             android:layout_weight="1"
-                                                                            android:text="Sweet tea"
+                                                                            android:text="@string/sweet_tea"
                                                                             android:textSize="14dp" />
                                                                     </LinearLayout>
 
@@ -946,13 +946,13 @@
                                                                         android:id="@+id/btn_order"
                                                                         android:layout_width="wrap_content"
                                                                         android:layout_height="wrap_content"
-                                                                        android:text="ORDER" />
+                                                                        android:text="@string/order" />
 
                                                                     <Button
                                                                         android:id="@+id/btn_cancel"
                                                                         android:layout_width="wrap_content"
                                                                         android:layout_height="wrap_content"
-                                                                        android:text="CANCEL" />
+                                                                        android:text="@string/cancel" />
                                                                 </LinearLayout>
                                                             </LinearLayout>
                                                         </LinearLayout>

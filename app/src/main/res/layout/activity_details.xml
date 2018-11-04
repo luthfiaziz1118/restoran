@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Makanan"/>
+        android:text="@string/makanan"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Kentang Goreng"/>
+            android:text="Fry Potato"/>
         <TextView
             android:id="@+id/hrg_kentang"
             android:layout_width="0dp"
@@ -68,7 +68,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Sempolan"/>
+            android:text="@string/sempolan"/>
         <TextView
             android:id="@+id/hrg_sempolan"
             android:layout_width="0dp"
@@ -86,7 +86,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Nasi Goreng"/>
+            android:text="@string/nasi_goreng"/>
         <TextView
             android:id="@+id/hrg_nasgor"
             android:layout_width="0dp"
@@ -104,7 +104,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Udang Tempura"/>
+            android:text="@string/udang_tempura"/>
         <TextView
             android:id="@+id/hrg_udang"
             android:layout_width="0dp"
@@ -122,7 +122,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Barbeque"/>
+            android:text="@string/barbeque"/>
         <TextView
             android:id="@+id/hrg_bbq"
             android:layout_width="0dp"
@@ -135,7 +135,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Minuman"/>
+        android:text="@string/minuman"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Jus Alpukat"/>
+            android:text="@string/jus_alpukat"/>
         <TextView
             android:id="@+id/hrg_alpukat"
             android:layout_width="0dp"
@@ -163,7 +163,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Jus Jeruk"/>
+            android:text="@string/jus_jeruk"/>
         <TextView
             android:id="@+id/hrg_jeruk"
             android:layout_width="0dp"
@@ -181,7 +181,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Lemon Tea"/>
+            android:text="@string/lemon_tea"/>
         <TextView
             android:id="@+id/hrg_lemon"
             android:layout_width="0dp"
@@ -254,14 +254,14 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Jumlah"
+            android:text="@string/jumlah"
             android:textSize="25sp"/>
         <TextView
             android:id="@+id/total"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="total"
+            android:text="@string/total"
             android:textSize="25sp"
             />
     </LinearLayout>
@@ -270,7 +270,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SELESAI"
+        android:text="@string/selesai"
         android:layout_gravity="center_vertical"
         />
 
