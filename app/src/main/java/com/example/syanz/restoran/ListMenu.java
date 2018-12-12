@@ -12,18 +12,23 @@ import com.example.syanz.restoran.Adapter.Adapter;
 import com.example.syanz.restoran.model.MenuModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListMenu extends AppCompatActivity {
-    private Button btn_pesan;
+    private Button btn_pesan,btn_tambah;
     RecyclerView mRecyclerView;
     Adapter mAdapter;
+    DBHelper dbHelper;
 
-    ArrayList<MenuModel> daftarMenu = new ArrayList<>();
+
+    List<MenuModel> daftarMenu = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_menu);
-        btn_pesan=findViewById(R.id.btn_pesan);
+
+        init();
+        dbHelper=new DBHelper(this);
         String CK="Chiken katsu merupakan makanan khas Jepang yang bahan dasarnya Ayam dengan perpaduan Tepung Maizena, Tepung Terigu, Tepung Roti di campur dengan rempah - rempah";
         String KG="Kentang Goreng, Stik kentang yang disajikan dengan penyajian modern memiliki kandungan karbohidrat yang rendah gula";
         String SMPL="Sempolan makanan khas malang yang cukup terkenal, bahan dasar sempolan bisa dari ikan ataupun ayam";
@@ -38,7 +43,7 @@ public class ListMenu extends AppCompatActivity {
         String ST="Minuman dengan antioksidan tinggi baik dikonsumsi setiap hari dengan takaran gula yang pas";
 
 
-
+/*
         daftarMenu.add(new MenuModel(getString(R.string.CK),"Rp.10.000",CK,R.drawable.katsu));
         daftarMenu.add(new MenuModel(getString(R.string.KG),"Rp.8.000",KG,R.drawable.kentang));
         daftarMenu.add(new MenuModel(getString(R.string.SMPL),"Rp.5.000",SMPL,R.drawable.sempolan));
@@ -50,10 +55,12 @@ public class ListMenu extends AppCompatActivity {
         daftarMenu.add(new MenuModel(getString(R.string.LT),"Rp.8.000",LT,R.drawable.lemontea));
         daftarMenu.add(new MenuModel(getString(R.string.OB),"Rp.15.000",OB,R.drawable.ocean));
         daftarMenu.add(new MenuModel(getString(R.string.BDRK),"Rp.10.000",BDRK,R.drawable.bandrek));
-        daftarMenu.add(new MenuModel(getString(R.string.ST),"Rp.10.000",ST,R.drawable.tea));
+        daftarMenu.add(new MenuModel(getString(R.string.ST),"Rp.10.000",ST,R.drawable.tea));*/
+        daftarMenu=dbHelper.tampilData();
+
 
         mRecyclerView = findViewById(R.id.rv_list_menu);
-        mAdapter = new Adapter(ListMenu.this, daftarMenu);
+        mAdapter = new Adapter(ListMenu.this, daftarMenu,dbHelper);
         mRecyclerView.setAdapter (mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -65,5 +72,16 @@ public class ListMenu extends AppCompatActivity {
 
             }
         });
+        btn_tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ListMenu.this,TambahMenu.class));
+            }
+        });
+    }
+    public void init(){
+        btn_pesan=findViewById(R.id.btn_pesan);
+        btn_tambah=findViewById(R.id.btn_tambahmenu);
+
     }
 }

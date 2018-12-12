@@ -1,14 +1,22 @@
 package com.example.syanz.restoran.model;
 
 public class MenuModel {
-    private String namaMenu,hargaMenu,deskripsiMenu;
+    private String ID,namaMenu,hargaMenu,deskripsiMenu;
     private int fotoMenu;
 
-    public MenuModel(String namaMenu, String hargaMenu, String deskripsiMenu, int fotoMenu) {
+    public MenuModel(String ID,String namaMenu, String hargaMenu, String deskripsiMenu) {
         this.namaMenu = namaMenu;
         this.hargaMenu = hargaMenu;
         this.deskripsiMenu = deskripsiMenu;
-        this.fotoMenu = fotoMenu;
+        this.ID = ID;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getNamaMenu() {
